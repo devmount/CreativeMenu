@@ -145,7 +145,7 @@ class creativeMenu extends Plugin {
 			// Name des Autors
 			"HPdesigner",
 			// Download-URL
-			"Keine Dokumentation vorhanden.",
+			"http://www.devmount.de/Develop/moziloCMS/Plugins/creativeMenu.html",
 			array('{creativeMenu}' => 'Erstellt ein CSS3 Menü')
 		);
 
