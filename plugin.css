@@ -1,24 +1,65 @@
 /*
-    PluginDraft CSS styles
+    CreativeMenu CSS styles
 */
 
-.plugindraft {
+.creativemenu {
 }
 
-.plugindraft-error {
+/* NOTICE message */
+.creativemenu-notice {
+    display: table;
+    margin: 2px 0;
+    border: 1px solid #777;
+    background-color: #eee;
+}
+.creativemenu-notice div {
+    display: table-cell;
+    padding: 2px 6px;
+    color: white;
+    background-color: #777;
+    height: inherit;
+}
+.creativemenu-notice span {
+    display: table-cell;
+    padding: 2px 4px;
+    color: #777;
+}
+
+/* SUCCESS message */
+.creativemenu-success {
+    display: table;
+    margin: 2px 0;
+    border: 1px solid #2a0;
+    background-color: #efe;
+}
+.creativemenu-success div {
+    display: table-cell;
+    padding: 2px 6px;
+    color: white;
+    background-color: #2a0;
+    height: inherit;
+}
+.creativemenu-success span {
+    display: table-cell;
+    padding: 2px 4px;
+    color: #2a0;
+}
+
+/* ERROR message */
+.creativemenu-error {
     display: table;
     margin: 2px 0;
     border: 1px solid #f33;
     background-color: #fee;
 }
-.plugindraft-error div {
+.creativemenu-error div {
     display: table-cell;
     padding: 2px 6px;
     color: white;
     background-color: #f33;
     height: inherit;
 }
-.plugindraft-error span {
+.creativemenu-error span {
     display: table-cell;
     padding: 2px 4px;
     color: #f33;
