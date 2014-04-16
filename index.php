@@ -1,17 +1,17 @@
 <?php if(!defined('IS_CMS')) die();
 
 /**
- * Plugin:   creativeMenu
+ * Plugin:   CreativeMenu
  * @author:  HPdesigner (hpdesigner[at]web[dot]de)
  * @version: v0.1.2013-08-31
- * @license: GPL
+ * @license: GPL v3+
  *
  * Plugin created by DEVMOUNT
  * www.devmount.de
  *
 **/
 
-class creativeMenu extends Plugin {
+class CreativeMenu extends Plugin {
 
 	function getContent($value) {
 		//global $CMS_CONF;
@@ -137,16 +137,16 @@ class creativeMenu extends Plugin {
 
 		$info['deDE'] = array(
 			// Plugin-Name
-			'<b>creativeMenu</b> v0.1.2013-08-31',
+			'<b>CreativeMenu</b> v0.1.2013-08-31',
 			// CMS-Version
 			"2.0",
 			// Kurzbeschreibung
-			'{creativeMenu} erstellt das Hauptmenü mit Symbolen und Untertiteln zu jeweiligen Hauptmenpunkten.<br />Symbole und Untertitel können in den Textfeldern definiert werden, indem pro Zeile ein Symbol bzw. Untertitel notiert wird. Dabei sind Anzahl und Reihenfolge äquivalent zu den Hauptmenüpunkten.',
+			'{CreativeMenu} erstellt das Hauptmenü mit Symbolen und Untertiteln zu jeweiligen Hauptmenpunkten.<br />Symbole und Untertitel können in den Textfeldern definiert werden, indem pro Zeile ein Symbol bzw. Untertitel notiert wird. Dabei sind Anzahl und Reihenfolge äquivalent zu den Hauptmenüpunkten.',
 			// Name des Autors
 			"HPdesigner",
 			// Download-URL
-			"http://www.devmount.de/Develop/moziloCMS/Plugins/creativeMenu.html",
-			array('{creativeMenu}' => 'Erstellt ein CSS3 Menü')
+			"http://www.devmount.de/Develop/moziloCMS/Plugins/CreativeMenu.html",
+			array('{CreativeMenu}' => 'Erstellt ein CSS3 Menü')
 		);
 
 		if(isset($info[$language])) return $info[$language]; else return $info['deDE'];
