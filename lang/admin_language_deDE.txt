@@ -1,3 +1,5 @@
-tag1         = Gibt ... zurück.
-description  = Generiert ... <br /><br /><span class='plugindraft-bold'>Nutzung:</span><br /><span class='plugindraft-code'>{PARAM1}</span> Fügt ... ein.<br /><br /><span class='plugindraft-pre'>&lt;attribut&gt;: </span>Attributbeschreibung ... <span class='plugindraft-pre'>...</span><br /><br /><span class='plugindraft-bold'>Dokumentation:</span><br />Eine ausführliche Dokumentation ist auf <span class="plugindraft-italic">www.devmount.de</span> zu finden (siehe obenstehender Link).
-admin_header = {PARAM1} Plugin Konfiguration
+tag1             = Gibt das CreativeMenu zurück.
+description      = Generiert das Hauptmenü auf devmount.de.<br /><br /><span class='plugindraft-bold'>Nutzung:</span><br /><span class='plugindraft-code'>{PARAM1}</span> Fügt das CreativeMenu ein.<br /><br /><span class='plugindraft-bold'>Dokumentation:</span><br />Eine ausführliche Dokumentation ist auf <span class="plugindraft-italic">www.devmount.de</span> zu finden (siehe obenstehender Link).
+admin_header     = {PARAM1} Plugin Konfiguration
+admin_categories = Kategorien
+admin_content    = Inhalt

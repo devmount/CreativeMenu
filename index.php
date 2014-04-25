@@ -198,18 +198,6 @@ class CreativeMenu extends Plugin
             "rows" => "10"
         );
 
-        // Template
-        $config['--template~~'] = '
-                <div class="mo-in-li-l" style="width:29%;">{nofirstcat_description}</div>
-                <div class="mo-in-li-l" style="width:19%;">{nofirstcat_checkbox}</div>
-                <div class="mo-in-li-r" style="width:19%;">{maxcat_select}</div>
-                <div class="mo-in-li-r" style="width:29%;">{maxcat_description}</div>
-            </li>
-            <li class="mo-in-ul-li mo-inline ui-widget-content ui-corner-all ui-helper-clearfix">
-                <div class="mo-in-li-l" style="width:49%;">{symbols_description}<br />{symbols_textarea}</div>
-                <div class="mo-in-li-r" style="width:49%;">{subtitles_description}<br />{subtitles_textarea}
-        ';
-
         // read admin.css
         $admin_css = '';
         $lines = file('../plugins/' . self::PLUGIN_TITLE. '/admin.css');
@@ -249,7 +237,7 @@ class CreativeMenu extends Plugin
         </li>
         <li class="mo-in-ul-li ui-widget-content plugindraft-admin-li">
             <div class="plugindraft-admin-subheader">'
-            . $this->_admin_lang->getLanguageValue('admin_categories')
+            . $this->_admin_lang->getLanguageValue('admin_content')
             . '</div>
             <div class="creativemenu-col-third">
                 {symbols_description}<br />{symbols_textarea}
