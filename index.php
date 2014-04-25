@@ -73,7 +73,7 @@ class CreativeMenu extends Plugin
         $c = 0;
         $n = intval(15/$this->countCategories());
 
-        $catname = substr(CAT_REQUEST, 0, strpos(CAT_REQUEST,'%2F'));
+        $catname = substr(CAT_REQUEST, 0, strpos(CAT_REQUEST, '%2F'));
 
         // initialize menu html content
         $menu = '<div class="ca-menu">';
@@ -81,8 +81,7 @@ class CreativeMenu extends Plugin
         // build menu
         foreach ($categoriesarray as $cat) {
             $menu .= '<div class="large-' . $n . ' small-' . $n . ' columns';
-            if(
-                $CatPage->is_Activ($cat, false)
+            if ($CatPage->is_Activ($cat, false)
                 or $CatPage->get_HrefText($cat, false) == $catname
             ) {
                 $menu .= ' dmenuactive';
@@ -176,7 +175,9 @@ class CreativeMenu extends Plugin
 
         // maxcat
         $catnumbers = array();
-        for ($i=1; $i <= count($CatPage->get_CatArray()); $i++) $catnumbers[$i] = $i;
+        for ($i=1; $i <= count($CatPage->get_CatArray()); $i++) {
+            $catnumbers[$i] = $i;
+        }
         $config['maxcat']  = array(
             "type" => "select",
             "description" => 'Maximale Anzahl an Menüpunkten',
