@@ -9,7 +9,7 @@
  *
  * @category PHP
  * @package  PHP_MoziloPlugins
- * @author   HPdesigner <mail@devmount.de>
+ * @author   DEVMOUNT <mail@devmount.de>
  * @license  GPL v3+
  * @version  GIT: v0.2.2014-04-26
  * @link     https://github.com/devmount/CreativeMenu
@@ -30,7 +30,7 @@ if (!defined('IS_CMS')) {
  *
  * @category PHP
  * @package  PHP_MoziloPlugins
- * @author   HPdesigner <mail@devmount.de>
+ * @author   DEVMOUNT <mail@devmount.de>
  * @license  GPL v3+
  * @link     https://github.com/devmount/CreativeMenu
  */
@@ -40,12 +40,13 @@ class CreativeMenu extends Plugin
     private $_admin_lang;
 
     // plugin information
-    const PLUGIN_AUTHOR  = 'HPdesigner';
-    const PLUGIN_DOCU
-        = 'http://devmount.de/Develop/moziloCMS/Plugins/CreativeMenu.html';
+    const PLUGIN_AUTHOR  = 'DEVMOUNT';
     const PLUGIN_TITLE   = 'CreativeMenu';
     const PLUGIN_VERSION = 'v0.2.2014-04-26';
     const MOZILO_VERSION = '2.0';
+    const PLUGIN_DOCU
+        = 'http://devmount.de/Develop/moziloCMS/Plugins/CreativeMenu.html';
+
     private $_plugin_tags = array(
         'tag1' => '{CreativeMenu}',
     );
@@ -282,7 +283,11 @@ class CreativeMenu extends Plugin
                 htmlspecialchars($this->_plugin_tags['tag1'])
             ),
             self::PLUGIN_AUTHOR,
-            self::PLUGIN_DOCU,
+            array(
+                self::PLUGIN_DOCU,
+                self::PLUGIN_TITLE . ' '
+                . $this->_admin_lang->getLanguageValue('on_devmount')
+            ),
             $tags
         );
 
