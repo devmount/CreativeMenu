@@ -12,7 +12,7 @@
  * @author   DEVMOUNT <mail@devmount.de>
  * @license  GPL v3+
  * @version  GIT: v0.2.2014-04-26
- * @link     https://github.com/devmount/CreativeMenu
+ * @link     https://github.com/devmount-mozilo/CreativeMenu
  * @link     http://devmount.de/Develop/moziloCMS/Plugins/CreativeMenu.html
  *
  * Plugin created by DEVMOUNT
@@ -32,7 +32,7 @@ if (!defined('IS_CMS')) {
  * @package  PHP_MoziloPlugins
  * @author   DEVMOUNT <mail@devmount.de>
  * @license  GPL v3+
- * @link     https://github.com/devmount/CreativeMenu
+ * @link     https://github.com/devmount-mozilo/CreativeMenu
  */
 class CreativeMenu extends Plugin
 {
