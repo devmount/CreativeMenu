@@ -16,7 +16,9 @@ Installing a plugin manually requires FTP Access.
 - Go to the backend tab *Plugins* and activate the now listed new CreativeMenu plugin
 
 ## Syntax
-```{CreativeMenu}```
+```
+{CreativeMenu}
+```
 Inserts the menu with icons and descriptions.
 
 ## License
@@ -24,4 +26,4 @@ This Plugin is distributed under *GNU General Public License, Version 3* (see LI
 
 ## Documentation
 A detailed documentation and demo can be found on DEVMOUNT's website:
-http://devmount.de/Develop/moziloCMS/Plugins/CreativeMenu.html
+http://t.devmount.de/Develop/moziloCMS/Plugins/CreativeMenu.html
